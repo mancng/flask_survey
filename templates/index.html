@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_index.css') }}">
+</head>
+<body>
+    <h1>This is homepage</h1>
+    <div id="container">
+        <div id="wrapper">
+            <form action="/result" method="POST">
+                <label for="name">Name:</label>
+                <input name="name" type="text"><br>
+                <label for="location">Dojo Location:</label>
+                <input name="location" type="text"><br>
+                <label for="language">Favorite Language:</label>
+                <input name="language" type="text"><br>
+                <label for="comment">Comment (optional):</label>
+                <textarea name="comments" id="comments" cols="60" rows="10"></textarea>
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
